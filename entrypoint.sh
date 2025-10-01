@@ -10,4 +10,6 @@ if [[ -z "$PUSHOVER_TOKEN_USER" ]]; then
     exit 1
 fi
 
+envsubst < /etc/smsd.conf.template > /tmp/smsd.conf
+
 exec "$@"

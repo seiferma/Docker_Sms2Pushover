@@ -8,7 +8,7 @@ delaytime = 20
 
 [GSM1]
 init = AT+CNMI=2,1,0,0,0
-device = /dev/ttyUSB0
+device = $DEV
 check_memory_method = 3
 sending_disabled = yes
 incoming = yes
