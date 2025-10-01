@@ -1,6 +1,8 @@
-FROM alpine:latest
+FROM alpine:3.22
 
-RUN apk add --no-cache smstools curl tzdata && \
+ARG VERSION
+
+RUN apk add --no-cache "smstools=${VERSION}" curl tzdata && \
     mkdir -p /var/spool/sms/outgoing /var/spool/sms/incoming /var/spool/sms/checked
 
 ADD entrypoint.sh /entrypoint.sh
