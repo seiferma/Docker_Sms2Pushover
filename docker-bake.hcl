@@ -1,5 +1,5 @@
 variable "VERSION" {
-  # renovate: datasource=repology depName=alpine_3_23/smstools
+  # renovate: datasource=repology depName=alpine_3_24/smstools
   default = "3.1.21-r4"
 }
 
